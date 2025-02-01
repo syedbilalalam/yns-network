@@ -36,7 +36,8 @@ nav h1{
     overflow-x:hidden;
 } */
 main{
-    width:500px;
+    max-width:500px;
+    width:100%;
     margin:150px auto;
     display:flex;
     flex-direction:column;
@@ -73,6 +74,9 @@ main{
     gap:33px;
     font-size:17px;
     border-radius:20px;
+    white-space: nowrap;
+    /* overflow-x:auto; */
+    min-width:fit-content;
 }
 .card .bannerText.valid{
     color:#27BE02;
@@ -84,6 +88,7 @@ main{
 .card .heading{
     display:flex;
     justify-content:space-between;
+    gap:10px;
 }
 /* Card banner */
 .card .bannerText{

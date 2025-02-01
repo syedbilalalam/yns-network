@@ -37,6 +37,7 @@
 /* User information text */
 .userInformation{
   font-size:15px;
+  white-space:wrap;
 }
 
 /* Allowed selections */
