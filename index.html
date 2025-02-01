@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Signal Control</title>
+    <link rel="stylesheet" href="index_files/style.css">
+
+    <!-- Google font "Inter" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Internet Signal Control</h1>
+        </nav>
+    </header>
+    <main>
+        <button class="btn pageButton" data-href="payment/">Purchase a new card &gt;</button>
+        <button class="btn pageButton" data-href="login/">&lt; Log Out</button>
+        <div id="cardsHolder">
+
+            <!-- <div class="card">
+                <div class="heading">
+                    <span>Package</span>
+                    <span>15Mbps</span>
+                </div>
+
+                <div class="bannerText valid">
+                    <p class="bannerPara">PURCHASED EXTRA</p>
+                    <p class="bannerStatus">+30 days for future</p>
+                </div>
+
+                <div class="cardInfos">
+                    <div class="infoSet">
+                        <p class="infoPoint">Paid Amound:</p>
+                        <p class="infoValue">700PKR</p>
+                    </div>
+                    <div class="infoSet">
+                        <p class="infoPoint">Balance:</p>
+                        <p class="infoValue">0PKR</p>
+                    </div>
+                    <div class="infoSet">
+                        <p class="infoPoint">Payment Method:</p>
+                        <p class="infoValue">Raast</p>
+                    </div>
+                    <div class="infoSet">
+                        <p class="infoPoint">Transaction Id:</p>
+                        <p class="infoValue">1234567890</p>
+                    </div>
+                    <div class="infoSet">
+                        <p class="infoPoint">Activation Date:</p>
+                        <p class="infoValue">10-Oct-2024</p>
+                    </div>
+                    <div class="infoSet">
+                        <p class="infoPoint">Expiry Date:</p>
+                        <p class="infoValue">10-Oct-2024</p>
+                    </div>
+                    <div class="infoSet">
+                        <p class="infoPoint">Validity Duration:</p>
+                        <p class="infoValue">(30 days)</p>
+                    </div>
+                    <div class="infoSet">
+                        <p class="infoPoint">Recipt:</p>
+                        <p class="infoValue">123456102024</p>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+
+
+        <!-- Older recipts -->
+        <button id="myOlderData" class="btn pageButton disabled"> My older recipts &gt;</button>
+
+        <!-- Home page if not on the home page -->
+        <button id="backToHome" class="btn pageButton disabled" data-href="?">&lt; Back to home page</button>
+    </main>
+    <!-- Render buttons -->
+    <script src="index_files/render_buttons.js" type="text/javascript"></script>
+    
+    <!-- Importing data base -->
+    <script src="index_files/db.js" type="text/javascript"></script>
+    
+    <script src="index_files/script.js" type="text/javascript"></script>
+    
+</body>
+
+</html>
