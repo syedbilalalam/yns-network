@@ -1,5 +1,5 @@
 // Local database enteries
-const internetSpeed = ['15Mbps'],
+const internetSpeed = ['15Mbps', '30Mbps', '50Mbps'],
     paymentMethod = ['Raast', 'JazzCash', 'Physical'],
     cardBanner = ['PURCHASED EXTRA', 'ACTIVATED', 'EXPIRED'];
 // Data criteria
