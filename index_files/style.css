@@ -2,10 +2,6 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-
-    /* Disabling user selection */
-    /* user-select:none; */
-
     /* Google font */
     font-family: "Inter", serif;
     font-optical-sizing: auto;
