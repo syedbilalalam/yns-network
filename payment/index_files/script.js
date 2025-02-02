@@ -1,12 +1,3 @@
-
-// Verification for login
-const loginData = sessionStorage.getItem('sidwsk');
-if (loginData) {
-    if (sha256.hex(loginData) != '53930d2f21256b7a0180d4e203cdaa1976cc84d6bb1b4ab16631df1ffeea3d79')
-        window.location.replace('../login');
-} else
-    window.location.replace('../login');
-
 // Copy to clip board
 const raastIdH = { c: 'JXBKIXSnXQsLvq5gTvPdYz1inxCaihnKJFgT1RPpaUJ4uGaDDljmgg==', iv: '1xUr6ne+Cze9YDdb' },
     jazzCashIdH = { c: 'mcyQMqTRAXCudgTjuksf3VFsOqMeDTYGevYY', iv: 'YZkCG1a5RLHC1JbL' };
