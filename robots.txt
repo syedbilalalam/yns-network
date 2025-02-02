@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://syedbilalalam.github.io/yns-network/sitemap.xml
