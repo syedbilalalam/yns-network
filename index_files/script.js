@@ -92,7 +92,7 @@ for (let index = scrollIndex - 1, counter = 1; counter <= 12; index--, counter++
         <div class="cardInfos">
             <!-- Info set -->
             <div class="infoSet">
-                <p class="infoPoint">Paid Amound:</p>
+                <p class="infoPoint">Paid Amount:</p>
                 <p class="infoValue">${element[1]} PKR</p>
             </div>
             <!-- Info set -->
