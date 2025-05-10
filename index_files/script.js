@@ -125,6 +125,12 @@ for (let index = scrollIndex - 1, counter = 1; counter <= 12; index--, counter++
                 <p class="infoPoint">Validity Duration:</p>
                 <p class="infoValue">(${element[6]} days)</p>
             </div>
+            ${element[7]?`
+            <div class="infoSet">
+                <p class="infoPoint">Used while expired:</p>
+                <p class="infoValue">${element[7]} day${pluralSuffix(element[7])}</p>
+            </div>
+            `:''}
             <!-- Info set -->
             <div class="infoSet">
                 <p class="infoPoint">Recipt:</p>
