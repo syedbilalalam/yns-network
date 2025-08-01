@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* Google font */
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.disabled{
+    display:none !important;
+}
+header, nav{
+    width:100%;
+    padding:10px 20px;
+    background-image:linear-gradient(to right, #FFDC67, #FFF267);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1;
+}
+nav h1{
+    font-size:32px;
+    font-weight:300;
+}
+
+/* Main content */
+/* body{
+    display:flex;
+    flex-direction:column;
+    justify-content:stretch;
+    overflow-x:hidden;
+} */
+main{
+    max-width:500px;
+    width:100%;
+    margin:150px auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: stretch;;
+    gap:45px;
+}
+#cardsHolder{
+    display:flex;
+    flex-direction:column;
+    justify-content: stretch;;
+    gap:45px;
+}
+/* Default button */
+.btn{
+    border:none;
+    outline:none;
+    background-color:#FFF267;
+    color:#7E6501;
+    font-size:16px;
+    cursor:pointer;
+}
+/* Page Button */
+.pageButton{
+    padding:15px 10px;
+    border-radius:20px;
+}
+/* Card */
+.card{
+    background-color:#FFF267;
+    color:#8B6B00;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:33px;
+    font-size:17px;
+    border-radius:20px;
+    white-space: nowrap;
+    /* overflow-x:auto; */
+    min-width:fit-content;
+}
+.card .bannerText.valid{
+    color:#27BE02;
+}
+.card .bannerText.expired{
+    color:#BE0202;
+}
+/* Card heading */
+.card .heading{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+}
+/* Card banner */
+.card .bannerText{
+    width:100%;
+    text-align:center;
+}
+.card .bannerText .bannerPara{
+    font-size:30px;
+}
+.card .bannerText .bannerStatus{
+    font-size:16px;
+}
+/* Card details */
+.cardInfos{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+.cardInfos .infoSet{
+    display:flex;
+    gap:25px;
+}

@@ -1,0 +1,1 @@
+declare const sha256: {hex(strData: string): string};
