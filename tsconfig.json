@@ -12,7 +12,7 @@
 
     /* Language and Environment */
     "target": "es2020",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-    // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+    "lib": ["esnext", "dom"],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     // "jsx": "preserve",                                /* Specify what JSX code is generated. */
     // "libReplacement": true,                           /* Enable lib replacement. */
     // "experimentalDecorators": true,                   /* Enable experimental support for legacy experimental decorators. */
@@ -107,7 +107,10 @@
     // "allowUnreachableCode": true,                     /* Disable error reporting for unreachable code. */
 
     /* Completeness */
-    // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-    // "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+
+    // Added saperately
+    "incremental": true
   }
 }
