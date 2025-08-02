@@ -1,5 +1,4 @@
 "use strict";
-/// <reference path="./sha256.d.ts"/>
 const loginLocation = document.getElementById('loginPageLocation')?.dataset.content;
 if (!loginLocation)
     throw new Error('Some issue with html document!');
