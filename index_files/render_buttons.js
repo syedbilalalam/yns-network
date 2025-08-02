@@ -16,8 +16,9 @@ function getCookie(name) {
 // Button clicks
 function renderButtons() {
     const redirectingButtons = document.querySelectorAll('button[data-href]');
-    redirectingButtons.forEach((unknowElement) => {
-        const element = unknowElement;
+    redirectingButtons.forEach((element) => {
+        if (!(element instanceof HTMLElement))
+            throw new Error('There is some issue in the HTML!');
         element.onclick = () => {
             window.location.replace(element.dataset.href);
         };

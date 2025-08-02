@@ -28,8 +28,8 @@ function copyToClipboard(text) {
     // Initialing document elements
     const raastCopy = document.getElementById('raastCopy'), jazzCashCopy = document.getElementById('jazzCashCopy'), raastIdText = document.getElementById('raastIdText'), jazzCashText = document.getElementById('jazzCashText');
     const raastId = 'PRIVATE - NOT PUBLIC', jazzCashId = 'PRIVATE - NOT PUBLIC';
-    if (!raastCopy || !jazzCashCopy || !raastIdText || !jazzCashText || !raastId || !jazzCashId)
-        throw new Error('Incomplete HTML!');
+    if (!raastCopy || !jazzCashCopy || !raastIdText || !jazzCashText)
+        throw new Error('HTML is incomplete!');
     // Setting up details on html side
     raastCopy.onclick = () => {
         copyToClipboard(raastId);

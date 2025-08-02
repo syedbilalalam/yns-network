@@ -37,13 +37,13 @@ if (nextData) {
     const nextGap: number = parseInt(nextData);
     scrollIndex = (nextGap*12);
     if(nextGap > 1){
-        const element = document.getElementById('backToHome');
+        const element: HTMLElement | null = document.getElementById('backToHome');
         if(!element) throw new Error('HTML element not found!!');
         element.classList.remove('disabled');
     }
 }
 if(userData.length > 12){
-    const olderData = document.getElementById('myOlderData');
+    const olderData: HTMLElement | null = document.getElementById('myOlderData');
     if(!olderData) throw new Error('HTML element not found!');
     olderData.classList.remove('disabled');
     olderData.dataset.href = '?next='+((scrollIndex/12)+1);
@@ -51,7 +51,7 @@ if(userData.length > 12){
 renderButtons();
 
 // Manageing user data
-const cardsHolder = document.getElementById('cardsHolder');
+const cardsHolder: HTMLElement | null = document.getElementById('cardsHolder');
 if(!cardsHolder) throw new Error('HTML element not found!');
 let totalDurationPurchased: number = 0;
 let cardExpires = 0;

@@ -1,9 +1,4 @@
-// Inferface for our element
-interface ElementInterface extends HTMLElement{
-    dataset: {href: string};
-}
-
-function getCookie(name: string): string | null{
+function getCookie(name: string): string | null {
     // Get all cookies as a single string and split them into an array
     const cookies: string[] = document.cookie.split("; ");
 
@@ -23,12 +18,11 @@ function getCookie(name: string): string | null{
 
 // Button clicks
 function renderButtons(): void {
-    const redirectingButtons = document.querySelectorAll('button[data-href]');
-    
-    redirectingButtons.forEach((unknowElement: unknown): void => {
-        const element: ElementInterface = (unknowElement as ElementInterface);
+    const redirectingButtons: NodeListOf<Element> = document.querySelectorAll('button[data-href]');
+    redirectingButtons.forEach((element: Element): void => {
+        if(!(element instanceof HTMLElement)) throw new Error('There is some issue in the HTML!');
         element.onclick = (): void => {
-            window.location.replace(element.dataset.href);
+            window.location.replace(element.dataset.href!);
         }
     });
 }

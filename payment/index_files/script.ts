@@ -37,7 +37,7 @@ function copyToClipboard(text: string): void {
     const raastId: string = 'PRIVATE - NOT PUBLIC',
         jazzCashId: string = 'PRIVATE - NOT PUBLIC';
 
-    if (!raastCopy || !jazzCashCopy || !raastIdText || !jazzCashText || !raastId || !jazzCashId) throw new Error('Incomplete HTML!');
+    if (!raastCopy || !jazzCashCopy || !raastIdText || !jazzCashText) throw new Error('HTML is incomplete!');
 
 
     // Setting up details on html side
