@@ -9,7 +9,7 @@ loginElement.onclick = () => {
     const userPasswordElem: HTMLElement | null = document.getElementById('pass'),
         userNameElem: HTMLElement | null = document.getElementById('user');
 
-    if(!(userPasswordElem instanceof HTMLFormElement) || !(userNameElem instanceof HTMLFormElement)) throw new Error('HTML is incomplete!');
+    if(!(userPasswordElem instanceof HTMLInputElement) || !(userNameElem instanceof HTMLInputElement)) throw new Error('HTML is incomplete!');
 
     const userPassword: string = userPasswordElem.value;
     if (userNameElem.value.toLowerCase() === NetworkUser.name && sha256.hex(userPassword) === NetworkUser.key) {
